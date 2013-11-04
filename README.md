@@ -23,6 +23,7 @@ chef-soloインストール
     $ sudo gem install chef
 
 recipeダウンロード＆実行
+（rbenvもインストールするのでrvmを既にインストールしている場合は注意）
 
     $ cd /vagrant/
     $ git clone https://github.com/t-oginogin/chef-recipes-narabi.git
