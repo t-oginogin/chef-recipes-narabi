@@ -1,0 +1,6 @@
+// localhost.json
+{
+  "run_list" : [
+    "recipe[rbenv]"
+  ]
+}
