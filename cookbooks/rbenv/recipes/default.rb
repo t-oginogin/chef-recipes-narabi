@@ -51,3 +51,24 @@ bash 'install_ruby' do
     rbenv rehash
   EOL
 end
+
+gem_package 'bundler' do
+  gem_binary "~/.rbenv/versions/#{ruby_version}/bin/gem"
+  action :upgrade
+end
+
+gem_package 'rails' do
+  gem_binary "~/.rbenv/versions/#{ruby_version}/bin/gem"
+  action :upgrade
+end
+
+bash 'install_rails' do
+  user 'vagrant'
+  group 'vagrant'
+
+  code <<-EOL
+    source ~/.bashrc
+    rbenv rehash
+  EOL
+end
+
