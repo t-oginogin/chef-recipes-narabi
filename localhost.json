@@ -1,6 +1,7 @@
 // localhost.json
 {
   "run_list" : [
-    "recipe[rbenv]"
+    "recipe[rbenv]",
+    "recipe[narabi]"
   ]
 }
